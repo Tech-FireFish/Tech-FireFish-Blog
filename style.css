@@ -1,272 +1,29 @@
-
-*{
-    /* margin use to balance distance between each elements.
-    padding use to balance distance between element and its border. */
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Popings',sans-serif;
-
-}
+/* rgb(13, 70, 92) */
 body{
-    /* line by line
-    display gives flexible position to elements,
-    justify-content by default sets element to left,
-    align-items by default sets element to top,
-    min-height enlarges elements to fitting scale,
-    url image location in file
-    fitting image scale
-    origin at center */
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    min-height:100vh;
-    background:url('rick_and_morty_car_drive.jpg')no-repeat;
+    /* background-image:url("./images/background-C1.jpg"); */
+    background-color:rgb(13, 70, 92);
     background-size:cover;
-    background-position:center;
 }
-header{
-    position: fixed;
-    top:0;
-    left:0;
-    width:100%;
-    /* padding: one value=overall,two values= up&down right&left
-    three values=up left&right down, four values=up right down left */
-    padding:20px 100px;
-    /* background: red;  */
-    display: flex;
-    /* display:flex-grow gives before, flex itself gives all header
-    elements in one line */
-    justify-content: space-between ;
-    align-items: center;
-    /* z-index use to put element in order, hightest number goes first */
-    z-index: 99;
+/* HeaderLine */
+#logo{
+    font-size:50px;
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif;
+    color:white;
 }
-.naviagtion .btnLogin-popup{
-    position:center;
-}
-.logo{
-    font-size:2em;
-    color: #fff;
-    user-select:none;
-}
-.navigation a {
-    position: relative;
-    /* # em give # times of the current size  */
-    font-size:1.1em;
-    color:#fff;
-    /* text-decoration gives extra designs like underline, ex:line white  */
-    text-decoration:none;
-    font-weight:500;
-    margin-left:40px;
-}
-/* It's an object originate from center of each element, skip, moved -6px down,
-has same length as text, 3px height, color white, skip,
-transformation finish status 0, skip*/
-.navigation a::after {
-    content:'';
-    position: absolute;
-    left:0;
-    bottom:-6px;
-    width:100%;
-    height:3px; 
-    background:#fff;
-    border-radius:5px;
-    /* transform-origin:right; */
-    transform: scaleX(0);
-    transition: transform .15s;
-} 
-/* transformation finish will be done when hover */
-.navigation a:hover::after{
-    /* transform-origin:left; */
-    transform: scaleX(1);
-}
-.navigation .btnLogin-popup{
-    width:130px;
-    height:50px;
-    background:transparent;
-    border: 2px solid #fff;
-    outline: none;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: 500;
-    margin-left:40px;
-    transition:.15s;
-}
-/* btn class:hover for extra changes, 
-and transition time for btn as above */
-.navigation .btnLogin-popup:hover{
-    background: #fff;
-    color: #042028;
-}
-.wrapper{
-    position:relative;
-    width:400px;
-    height:440px;
-    background:transparent;
-    border: 2px solid rgba(255,255,255,5);
-    border-radius:20px;
-    /* allows selected area to be blur based on background */
-    backdrop-filter:blur(15px);
-    box-shadow:0 0 3px rgba(0,0,0,.5);
+.headLine {
+    border:2px solid black;
     display:flex;
-    justify-content:center;
+    flex-direction:row;
     align-items:center;
-    /* Good Stuff
-    cuts the extra area of an element so multiple elements fit,
-    even true as if an element is outside designed area*/
-    overflow:hidden;
-    transform:scale(0);
-    /* transition values represent left to right:
-    property, duration, timing-function, transition delay */
-    /* ease gives animation slow fast slow */
-    transition:transform .25s ease, height .2s ease;
-}
-.wrapper.active-popup{
-    transform:scale(1);
-}
-.wrapper.active{
-    height:520px;
-}
-.wrapper .form-box{
-    width:100%;
-    padding:40px;
-}
-.wrapper .form-box.login{
-    transition:transform .28s ease;
-    transform: translateX(0);
-}
-.wrapper .form-box.register{
-    position:absolute;
-    /* transition:none; */
-    /* first value moves 400px to right */
-    transform: translateX(400px);
-}
-.wrapper.active .form-box.login{
-    transition:none;
-    transform:translateX(-400px);
-} 
-.wrapper.active .form-box.register{
-    transition: transform .28s ease;
-    transform: translateX(0);
-}
-.wrapper .icon-close{
-    position:absolute;
-    top:0;
-    right:0;
-    width:45px;
-    height:45px;
-    background:#042028;
-    color:#fff;
-    align-items:center;
-    justify-content:center;
-    display:flex;
-    /* background:transparent; */
-    cursor:pinter;
-    font-size:2em;
-    border-bottom-left-radius:20px;
-    z-index:1;
-}
-.form-box h2{
-    font-size:2em;
-    color:#042028;
-    text-align:center;
-}
-.input-box{
-    position:relative;
-    width:100%;
-    height:50px;
-    /* Good Stuff */
-    border-bottom: 2px solid #000;
-    margin: 30px 0;
-}
-.input-box label {
-    position:absolute;
-    top:50%;
-    left:5px;
-    /* transform:translateY(-50%) because input box illustrates top */
-    transform:translateY(-50%);
-    font-size:1em;
-    color:#042028;
-    font-weight:500;
-    pointer-events:none;
-    transition:.5s;
-}
-/* Good Stuff */
-.input-box input:focus~label,
-.input-box input:valid~label {
-    top: -5px;
-}
-
-.input-box input{
-    width:100%;
-    height:100%;
-    background:transparent;
-    border:none;
-    outline:none;
-    font-size:1em;
-    color:#042028;
-    /* thickness of font */
-    font-weight:600;
-    /* padding second spot pushs typing area to the left */
-    padding: 0 35px 0 5px;
-}
-.input-box .icon{
-    position:absolute;
-    right:8px;
-    font-size:1.2em;
-    color :#042028;
-    line-height: 57px;
-}
-.remember-forgot{
-    font-size: .9em;
-    color: #042028;
-    font-weight:500;
-    margin: -15px 0 15px;
-    display: flex;
     justify-content:space-between;
+    
 }
-.remember-forgot label {
-    accent-color: #042028;
-    margin-right: 70px;
-}
-/* .remember-forgot input {
-    accent-color: #042028;
-    margin :1px 0 0 1px;
-} */
-.remember-forgot a {
-    color:#042028;
-    text-decoration: none;
-}
-.remember-forgot a:hover{
-    text-decoration: underline;
-}
-.btn{
-    width: 100%;
-    height:45px;
-    background:#042028;
-    border:none;
-    outline:none;
-    border-radius:6px;
-    cursor:pointer;
-    font-size:1em;
-    color:#fff;
-    font-weight:500;
-}
-.login-register{
-    font-size:.9em;
-    color:#042028;
-    text-align:center;
-    font-weight:500;
-    margin:25px 0 10px; 
-}
-.login-register p a{
-    color:#042028;
-    text-decoration:none;
-    font-weight:600;
-}
-.login-register p a:hover{
-    text-decoration:underline;
+.subHeadLine{
+    border:2px solid black;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items:center;
+
 }
