@@ -1,0 +1,34 @@
+/* rgb(17, 90, 118) */
+body{
+    /* background-image:url("./images/background-C1.jpg"); */
+    background-color:rgb(17, 90, 118);
+    background-size:cover;
+    font-family:'Times New Roman', Times, serif;
+}
+/* HeaderLine */
+#logo{
+    font-size:50px;
+    font-weight:bold;
+    color:white;
+    margin:0 0 0 0;
+    /* border:2px solid black; */
+}
+.headLine {
+    /* border:2px solid black; */
+    display:flex;
+    justify-content:space-between;
+    background-color:rgb(156, 223, 250);
+    margin:-8px;
+}
+.subHeadLine{
+    /* border:2px solid black; */
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:left;
+
+}
+.subHeadLine a{
+    margin:0 20px;
+    font-size: 20px
+}
