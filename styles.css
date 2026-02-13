@@ -1,34 +1,69 @@
 /* rgb(17, 90, 118) */
+/* rgb(156, 223, 250) */
+*{
+    box-sizing:border-box;
+}
 body{
-    /* background-image:url("./images/background-C1.jpg"); */
-    background-color:rgb(17, 90, 118);
+    background-color:rgb(0, 183, 255);
     background-size:cover;
     font-family:'Times New Roman', Times, serif;
+    margin:0px;
+    padding:0px;
 }
-/* HeaderLine */
-#logo{
-    font-size:50px;
+.logo{
+    color:aliceblue;
+    font-size:30px;
     font-weight:bold;
-    color:white;
-    margin:0 0 0 0;
-    /* border:2px solid black; */
+    float:left;
+    height:inherit;
+    /* inherit covers the given header height */
 }
-.headLine {
-    /* border:2px solid black; */
-    display:flex;
-    justify-content:space-between;
+.logo a{ 
+    position:relative;
+    /* set relative positioning for proper alignment */
+    top:9px;
+}
+header{
+    background:rgb(156, 223, 250);
+    height:55px;
+}
+header ul{
+    padding:0px;
+    margin:0px;
+    float:right;
+    list-style:none;
+}
+header ul li{
+    float:left;
+    position:relative;
+}
+header ul li:hover ul{
+    display:block;
+}
+header ul li ul{
+    position:absolute;
+    /* absolute sets vertical alignment to header ul li */
+    display:none;
     background-color:rgb(156, 223, 250);
-    margin:-8px;
 }
-.subHeadLine{
-    /* border:2px solid black; */
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:left;
-
+header ul li ul a:hover{
+    background-color:rgb(130, 130, 130)
 }
-.subHeadLine a{
-    margin:0 20px;
-    font-size: 20px
+header ul li ul li{
+    width:100%;
+    text-align:center;
+}
+header ul li ul li a{
+    padding:10px;
+}
+header ul li a{
+    display:block;
+    /* none is to hide, block is to show */
+    text-decoration:none;
+    padding:18px;
+    color:aliceblue;
+}
+header ul li a:hover{
+    background:rgb(26, 110, 146);
+    transition:0.3s;
 }
