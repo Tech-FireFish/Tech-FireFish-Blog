@@ -62,6 +62,7 @@ header ul li a{
     text-decoration:none;
     padding:18px;
     color:aliceblue;
+    height:55px;
 }
 header ul li a:hover{
     background:rgb(26, 110, 146);
