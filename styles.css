@@ -103,7 +103,7 @@ header ul li a:hover{
     height:55px;
 }
 @media screen and (max-width: 600px){
-    .navigation li{
+    .navigation{
         display:none;
     }
     #menuBtn{
@@ -113,6 +113,9 @@ header ul li a:hover{
     }
     #menuBtn:hover{
         background-color:rgb(108, 187, 255);
+    }
+    .navActive{
+        display:block;
     }
     .logo{
         float:none;
@@ -132,3 +135,4 @@ header ul li a:hover{
     }
 
 }
+
