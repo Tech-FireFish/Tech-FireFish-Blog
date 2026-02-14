@@ -1,70 +1,134 @@
 /* rgb(17, 90, 118) */
 /* rgb(156, 223, 250) */
 *{
+    /* v.0.0.1 */
     box-sizing:border-box;
+    font-family:'Times New Roman', Times, serif;
+    /*  */
 }
 body{
+    /* v.0.0.1 */
     background-color:rgb(0, 183, 255);
     background-size:cover;
-    font-family:'Times New Roman', Times, serif;
     margin:0px;
     padding:0px;
+    /*  */
 }
 .logo{
+    /* v.0.0.1 */
     color:aliceblue;
     font-size:30px;
     font-weight:bold;
     float:left;
     height:inherit;
     /* inherit covers the given header height */
+    /*  */
 }
 .logo a{ 
+    /* v.0.0.1 */
     position:relative;
     /* set relative positioning for proper alignment */
     top:9px;
+    /*  */
 }
 header{
-    background:rgb(156, 223, 250);
+    /* v.0.0.1 */
+    background:rgb(7, 120, 165);
     height:55px;
+    /*  */
 }
 header ul{
+    /* v.0.0.1 */
     padding:0px;
     margin:0px;
     float:right;
     list-style:none;
+    /*  */
 }
 header ul li{
+    /* v.0.0.1 */
     float:left;
     position:relative;
+    /*  */
 }
 header ul li:hover ul{
+    /* v.0.0.1 */
     display:block;
+    /*  */
 }
 header ul li ul{
+    /* v.0.0.1 */
     position:absolute;
     /* absolute sets vertical alignment to header ul li */
     display:none;
-    background-color:rgb(156, 223, 250);
+    background-color:rgb(25, 96, 124);
+    /*  */
 }
 header ul li ul a:hover{
-    background-color:rgb(130, 130, 130)
+    /* v.0.0.1 */
+    background-color:rgb(130, 130, 130);
+    /*  */
 }
 header ul li ul li{
+    /* v.0.0.1 */
     width:100%;
     text-align:center;
+    /*  */
 }
-header ul li ul li a{
-    padding:10px;
-}
+
 header ul li a{
+    /* v.0.0.1 */
     display:block;
     /* none is to hide, block is to show */
     text-decoration:none;
     padding:18px;
     color:aliceblue;
     height:55px;
-}
+    /*  */
+}   
 header ul li a:hover{
+    /* v.0.0.1 */
     background:rgb(26, 110, 146);
     transition:0.3s;
+    /*  */
+}
+#menuBtn{
+    color:white;
+    background-color:rgba(0, 0, 0, 0);
+    border:none;
+    font-weight:bold;
+    font-size:15px;
+    padding:18px;
+    display:none;
+    height:55px;
+}
+@media screen and (max-width: 600px){
+    .navigation li{
+        display:none;
+    }
+    #menuBtn{
+        display:block;
+        float:right;
+        margin:-55px 0 0 0;
+    }
+    #menuBtn:hover{
+        background-color:rgb(108, 187, 255);
+    }
+    .logo{
+        float:none;
+    }
+    header ul{
+        float:none;
+    }
+    header ul li{
+        float:none;
+        position:static;
+    }
+    header ul li ul {
+        position:static;
+    }
+    header ul li ul li{
+        text-align:left;
+    }
+
 }
