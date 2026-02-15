@@ -22,7 +22,27 @@ body{
     float:left;
     height:inherit;
     /* inherit covers the given header height */
+    /* helloWorld sliding */
+    position:relative;
+    overflow:hidden;
+    padding-left:20px;
     /*  */
+}
+.helloWorld{
+    position:absolute;
+    top:0;
+    right:-100%;
+    width:100%;
+    height:100%;
+    background:rgb(1, 52, 72);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:right 0.5s ease;
+}
+.logo:hover .helloWorld{
+    right:0;
 }
 .logo a{ 
     /* v.0.0.1 */
@@ -135,4 +155,5 @@ header ul li a:hover{
     }
 
 }
+
 
