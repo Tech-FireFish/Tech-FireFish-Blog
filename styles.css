@@ -10,7 +10,7 @@
 }
 body{
     /* v.0.0.1 */
-    background-color:#5C0120;
+    background-color:#DAD3B6;
     background-size:cover;
     margin:0px;
     padding:0px;
@@ -55,7 +55,7 @@ body{
 }
 header{
     /* v.0.0.1 */
-    background:#DAD3B6;
+    background:#5C0120;
     height:55px;
     /*  */
 }
@@ -157,5 +157,6 @@ header ul li a:hover{
     }
 
 }
+
 
 
