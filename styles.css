@@ -1,5 +1,7 @@
 /* rgb(17, 90, 118) */
 /* rgb(156, 223, 250) */
+/* #DAD3B6 red */
+/* #5C0120 white*/
 *{
     /* v.0.0.1 */
     box-sizing:border-box;
@@ -8,7 +10,7 @@
 }
 body{
     /* v.0.0.1 */
-    background-color:rgb(0, 183, 255);
+    background-color:#DAD3B6;
     background-size:cover;
     margin:0px;
     padding:0px;
@@ -22,7 +24,27 @@ body{
     float:left;
     height:inherit;
     /* inherit covers the given header height */
+    /* helloWorld sliding */
+    position:relative;
+    overflow:hidden;
+    padding-left:20px;
     /*  */
+}
+.helloWorld{
+    position:absolute;
+    top:0;
+    right:-100%;
+    width:100%;
+    height:100%;
+    background:rgb(1, 52, 72);
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:right 0.5s ease;
+}
+.logo:hover .helloWorld{
+    right:0;
 }
 .logo a{ 
     /* v.0.0.1 */
@@ -33,7 +55,7 @@ body{
 }
 header{
     /* v.0.0.1 */
-    background:rgb(7, 120, 165);
+    background:#5C0120;
     height:55px;
     /*  */
 }
@@ -103,7 +125,7 @@ header ul li a:hover{
     height:55px;
 }
 @media screen and (max-width: 600px){
-    .navigation li{
+    .navigation{
         display:none;
     }
     #menuBtn{
@@ -113,6 +135,9 @@ header ul li a:hover{
     }
     #menuBtn:hover{
         background-color:rgb(108, 187, 255);
+    }
+    .navActive{
+        display:block;
     }
     .logo{
         float:none;
@@ -132,3 +157,6 @@ header ul li a:hover{
     }
 
 }
+
+
+
