@@ -24,24 +24,33 @@ body{
     padding:0px;
     /*  */
 }
-.logo{
+header{
+    /* v.0.0.1 */
+    background:#5C0120;
+    height:55px;
+    display:flex;
+    justify-content:space-between;
+    /*  */
+}
+header .logo{
     /* v.0.0.1 */
     color:aliceblue;
     font-size:30px;
     font-weight:bold;
-    float:left;
     height:inherit;
     /* inherit covers the given header height */
     /* helloWorld sliding */
     position:relative;
-    overflow:hidden;
+    /* overflow:hidden; */
     padding-left:20px;
-    /*  */
+    /* Refactor */
+    width:45%;
+
 }
-.logo .helloWorld{
+header .logo .helloWorld{
     position:absolute;
     top:0;
-    right:-100%;
+    left:-100%;
     width:100%;
     height:100%;
     background:rgb(1, 52, 72);
@@ -49,31 +58,47 @@ body{
     display:flex;
     align-items:center;
     justify-content:center;
-    transition:right 0.5s ease;
+    transition:left 0.5s ease;
+    /*  */
 }
-.logo:hover .helloWorld{
-    right:0;
+header.logo:hover .helloWorld{
+    left:0;
 }
-.logo a{ 
+header .logo a{ 
     /* v.0.0.1 */
     position:relative;
     /* set relative positioning for proper alignment */
     top:9px;
-    /*  */
+    color:rgb(243, 243, 243);
+    /* menuBtn Config */
+    float:left;
 }
-header{
-    /* v.0.0.1 */
-    background:#5C0120;
+header .logo a:hover{
+    color:currentColor;
+}
+header .logo #menuBtn{
+    color:white;
+    background-color:rgba(0, 0, 0, 0);
+    border:none;
+    font-weight:bold;
+    font-size:15px;
+    padding:18px;
+    display:none;
     height:55px;
     /*  */
+    cursor:pointer;
+    float:right;
 }
-header ul{
+header ul {
     /* v.0.0.1 */
     padding:0px;
     margin:0px;
     float:right;
     list-style:none;
-    /*  */
+    position:relative;
+    /* v.0.0.2 */
+    background-color:#5C0120;
+    box-shadow:1rem 1rem 1rem -0.9rem grey;
 }
 header ul li{
     /* v.0.0.1 */
@@ -120,16 +145,6 @@ header ul li ul li{
     width:100%;
     text-align:center;
     /*  */
-}
-#menuBtn{
-    color:white;
-    background-color:rgba(0, 0, 0, 0);
-    border:none;
-    font-weight:bold;
-    font-size:15px;
-    padding:18px;
-    display:none;
-    height:55px;
 }
 /* Trending Post Title */
 #headline{
@@ -190,24 +205,28 @@ header ul li ul li{
 .postSlider .postWrapper .post .postInfo{
     margin:5px;
 }
-@media screen and (max-width: 600px){
-    .navigation{
-        display:none;
-        /* z-index:999; */
-    }
-    #menuBtn{
+@media screen and (max-width: 620px){
+    /* v.0.0.1 */
+    header{
         display:block;
-        float:right;
-        margin:-55px 0 0 0;
+        justify-content:none;
     }
-    #menuBtn:hover{
-        background-color:rgb(108, 187, 255);
+    header .logo{
+        width:100%;
     }
+    header ul{
+        display:none;
+        z-index:999;
+    }
+    header .logo #menuBtn{
+        display:block;
+    }
+    /* .navigation style to toggle */
     .navActive{
         display:block;
     }
-    .logo{
-        float:none;
+    header ul{
+        display:none;
     }
     header ul{
         float:none;
@@ -218,9 +237,13 @@ header ul li ul li{
     }
     header ul li ul {
         position:static;
+        /* display:block; */
     }
-    header ul li ul li{
-        text-align:left;
+    header ul li ul li a{
+        width:100%;
+        display:flex;
+        padding:18px 0 0 50px;
     }
-
+    /*  */
 }
+
