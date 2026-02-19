@@ -1,9 +1,9 @@
 // import {} from "./data.js";
 
 function navToggle(){
-            console.log("clicked");
-            let navigation = document.querySelector(".navigation");
-            navigation.classList.toggle("navActive");
+    console.log("clicked");
+    let navigation = document.querySelector(".navigation");
+    navigation.classList.toggle("navActive");
 };
 
 $(document).ready(function(){
@@ -19,16 +19,16 @@ $(document).ready(function(){
       breakpoint: 1024,
       settings: {
         slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 650,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 1,
       }
     },
     {
@@ -43,5 +43,5 @@ $(document).ready(function(){
     // instead of a settings object
   ]
     });
+    
 });
-
