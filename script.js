@@ -16,7 +16,7 @@ $(document).ready(function(){
         prevArrow: $('.prev'),
         responsive: [
     {
-      breakpoint: 1024,
+      breakpoint: 1480,
       settings: {
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -25,14 +25,14 @@ $(document).ready(function(){
       }
     },
     {
-      breakpoint: 650,
+      breakpoint: 1000,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 1,
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 530,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -45,3 +45,4 @@ $(document).ready(function(){
     });
     
 });
+
