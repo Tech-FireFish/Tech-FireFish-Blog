@@ -156,27 +156,27 @@ header ul li ul li{
     font-weight:bold;
 }
 /* Post Slider */
+.pageWrapper{
+    display:block;
+}
 .prev, .next{
-    width:30px;
-    height:30px;
-    position:relative;
+    width:40px;
     cursor:pointer;
     text-align:center;
     /* arrow Design */
     color:#5C0120;
     font-weight:bold;
     font-size:30px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
+    margin:117px 0 0 0;
+    padding:20px 0;
+    background-color:rgba(0, 0, 0, 0.2);
 }
 .postSlider .prev{
     float:left;
-    top:150px;
-    margin:0 0 0 37px;
 }
 .postSlider .next{
     float:right;
-    top:150px;
-    margin:0 37px 0 0;
 }
 .postSlider .postWrapper{
     /* border:2px dashed black; */
@@ -246,4 +246,5 @@ header ul li ul li{
     }
     /*  */
 }
+
 
