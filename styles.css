@@ -302,6 +302,13 @@ header ul li ul li{
     border-bottom:2px solid black;
     padding:20px 0px;
 }
+.explorationSide .topicList ul li a{
+    transition:0.3s;
+}
+.explorationSide .topicList ul li a:hover{
+    padding-left:10px;
+    transition:all 0.3s;
+}
 @media screen and (max-width: 620px){
     /* v.0.0.1 */
     header{
@@ -348,5 +355,6 @@ header ul li ul li{
 }
 }
 /*  */
+
 
 
