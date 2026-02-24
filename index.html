@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech-FireFish-Blog</title>
+    <link rel="icon" href="./image/Tech-FireFish-Blog.png">
 </head>
 <body>
     <!-- Navigation Bar build -->
     <header>
         <link rel="stylesheet" href="styles.css">
+        <!-- <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/> -->
         <div class="logo">
         <a><span style="color:rgb(243, 243, 243);">TECH </span>FIREFISH</a>
         <div class="helloWorld">Hello World</div>
-        </div>
         <button onclick="navToggle()" id="menuBtn">Menu</button>
+        </div>
         <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Arcade</a></li>
@@ -28,7 +31,151 @@
         </ul>
         
     </header>   
-     <!--  -->
-    <script src="index.js"></script>
+    
+    
+    <!-- Trending Post Slider -->
+    <div class="pageWrapper">
+        <div class="postSlider">
+            <p id="headline">Trending Post</p>
+            <p class="prev"><</p>
+            <p class="next">></p>
+            <div class="postWrapper">
+                <div class="post">
+                    <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
+                    <div class="postInfo">
+                        <h4><a href="#">Game Of The 2025</a></h4>
+                        <p>Author</p>
+                        <p>Date of publication</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
+                    <div class="postInfo">
+                        <h4><a href="#">Game Of The 2024</a></h4>
+                        <p>Author</p>
+                        <p>Date of publication</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
+                    <div class="postInfo">
+                        <h4><a href="#">Game Of The 2023</a></h4>
+                        <p>Author</p>
+                        <p>Date of publication</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
+                    <div class="postInfo">
+                        <h4><a href="#">Game Of The 2022</a></h4>
+                        <p>Author</p>
+                        <p>Date of publication</p>
+                    </div>
+                </div>
+                <div class="post">
+                    <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
+                    <div class="postInfo">
+                        <h4><a href="#">Game Of The 2021</a></h4>
+                        <p>Author</p>
+                        <p>Date of publication</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content  -->
+    <div class="mainWrapper">
+        <!-- Part 1 -->
+        <div class="recentPostWrapper">
+            <p style="font-size:40px;margin-left:20px;font-weight:bold;color:#5C0120;">Recent Posts</p>
+            <div class="recentPost">
+                <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="recentPostImage">
+                <div class="recentPostInfo">
+                    <h1>Game Of The 2021</h1>
+                    <div>
+                    <p>Author</p> 
+                    <p>Date of publication</p>
+                    </div>
+                    <p class="description">Description: Blank </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="recentPost">
+                <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="recentPostImage">
+                <div class="recentPostInfo">
+                    <h1>Game Of The 2021</h1>
+                    <div>
+                    <p>Author</p> 
+                    <p>Date of publication</p>
+                    </div>
+                    <p class="description">Description: Blank </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="recentPost">
+                <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="recentPostImage">
+                <div class="recentPostInfo">
+                    <h1>Game Of The 2021</h1>
+                    <div>
+                    <p>Author</p> 
+                    <p>Date of publication</p>
+                    </div>
+                    <p class="description">Description: Blank </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <!-- Part 2 -->
+        <div class="explorationSide">
+            <div class="searchBar">
+                <input type="text" placeholder="Search Input">
+                <button>Search</button>
+            </div>
+            <div class="topicList">
+                <h2>Topics</h2>
+                <ul>
+                    <li><a href="#">Topic 1</a></li>
+                    <li><a href="#">Topic 2</a></li>
+                    <li><a href="#">Topic 3</a></li>
+                    <li><a href="#">Topic 4</a></li>
+                    <li><a href="#">Topic 5</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <div class="footerWrapper">
+        <div class="footer">
+            <div class="aboutUs">
+                <h1>TECH FIREFISH</h1>
+                <p>Description: blank</p>
+                <p>Contact Number: 123-456-789</p>
+                <p>Email: info@techfirefish.com</p>
+                <a href="#">Social Media</a>
+            </div>
+            <div class="quickLinks">
+                <h1>QUICK LINKS</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Arcade</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+            <div class="contactUs">
+                <h1>CONTACT US</h1>
+                <input type="text" placeholder="Your email address">
+                <textarea placeholder="Your message"></textarea>
+                <button>Send</button>
+            </div>
+        </div>
+        <div class="copyright"><p>Copyright © 2025 Tech-FireFish-Blog. All rights reserved.</p></div>
+    </div>
+    <script src="jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
