@@ -207,7 +207,7 @@ header ul li ul li{
 }
 /* Main Content - Recent Post */
 .mainWrapper{
-    border:2px dotted black;
+    /* border:2px dotted black; */
     margin:10px 0 0 0;
     padding:0 0 0 0;
     width:100%;
@@ -416,6 +416,7 @@ header ul li ul li{
 .pageWrapper{
     display:none;
 } */
+
 
 
 
