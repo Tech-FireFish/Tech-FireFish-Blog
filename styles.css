@@ -149,7 +149,7 @@ header ul li ul li{
 /* Trending Post Title */
 #headline{
     margin:0;
-    color:#5C0120;
+    color:rgb(92, 1, 32);
     font-size:35px;
     text-align:center;
     padding:30px 0;
@@ -158,6 +158,8 @@ header ul li ul li{
 /* Post Slider */
 .pageWrapper{
     display:block;
+    /*  */
+    /* min-height:100%; */
 }
 .prev, .next{
     width:40px;
@@ -181,26 +183,24 @@ header ul li ul li{
 .postSlider .postWrapper{
     /* border:2px dashed black; */
     width:82%;
-    height:350px;
+    height:360px;
     margin: 0px auto;
     overflow:hidden;
     padding: 0px 5px;
 }
 .postSlider .postWrapper .sliderImage{
-    width:100%;
-    height:50%;
-    border-top-left-radius:15px;
+    width: 100%;
+    height:55%;
 }
 .postSlider .postWrapper .post{
-    background-color:white;
+    background-color:#DAD3B6;
     width:300px;
-    height:350px;
+    height:400px;
     display:inline-block;
     margin:10px;
     /* for the post image */
-    border-top-left-radius:15px;
+    box-shadow:1rem 1rem 1rem -0.9rem #5C0120;
     /*  */
-    box-shadow:1rem 1rem 1rem -0.9rem grey;
 }
 .postSlider .postWrapper .post .postInfo{
     margin:5px;
@@ -416,6 +416,7 @@ header ul li ul li{
 .pageWrapper{
     display:none;
 } */
+
 
 
 
