@@ -1,0 +1,32 @@
+.main-content-wrapper{
+
+}
+.main-content-wrapper .register-form{
+    border:2px solid white;
+    height:400px;
+    width:400px;
+    display:flex;
+    flex-direction:column;
+    /* align-items:center; */
+    padding:20px;
+}
+.main-content-wrapper .register-form label{
+    font-size:20px;
+}
+.main-content-wrapper .register-form input{
+    font-size:20px;
+    padding:10px;
+}
+.main-content-wrapper .register-form #submit-btn{
+    font-size:20px;
+    font-weight:bold;
+    padding:5px 10px;
+    margin:10px 0px;
+    width:100px;
+}
+.main-content-wrapper .register-form p{
+    text-align:center;
+}
+.main-content-wrapper .register-form p a{
+    border-bottom:2px solid black;
+}
