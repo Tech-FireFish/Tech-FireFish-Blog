@@ -50,6 +50,7 @@ header .logo{
     /* helloWorld sliding */
     position:relative;
     padding-left:20px;
+    height:inherit;
     /* TEMP */
     /* height:inherit; */
     /* overflow:hidden; */
