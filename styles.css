@@ -2,6 +2,8 @@
 /* rgb(156, 223, 250) */
 /* #DAD3B6 white */
 /* #5C0120 red */
+/* rgb(92, 1, 32) red */
+/* rgb(218, 211, 182) white */
 /* Navigation Bar*/
 *{
     /* v.0.0.1 */
@@ -14,20 +16,27 @@ a{
     color:#000000;
 }
 a:hover{
-    color:#5C0120;
+    color:rgb(92, 1, 32);
 }
+button,
+a{
+    cursor:pointer;
+}
+html,
 body{
     /* v.0.0.1 */
-    background-color:#DAD3B6;
+    background-color:rgb(218, 211, 182);
     background-size:cover;
     margin:0px;
     padding:0px;
-    /*  */
+    /* TEMP */
+    /* height:100%; */
 }
 header{
     /* v.0.0.1 */
     background:#5C0120;
     height:55px;
+    /* flex positioning */
     display:flex;
     justify-content:space-between;
     /*  */
@@ -37,17 +46,17 @@ header .logo{
     color:aliceblue;
     font-size:30px;
     font-weight:bold;
-    height:inherit;
     /* inherit covers the given header height */
     /* helloWorld sliding */
     position:relative;
-    /* overflow:hidden; */
     padding-left:20px;
-    /* Refactor */
-    width:45%;
-
+    /* TEMP */
+    /* height:inherit; */
+    /* overflow:hidden; */
+    /* width:45%; */
 }
 header .logo .helloWorld{
+    /* TEMP */
     position:absolute;
     top:0;
     left:-100%;
@@ -59,8 +68,8 @@ header .logo .helloWorld{
     align-items:center;
     justify-content:center;
     transition:left 0.5s ease;
-    /*  */
 }
+
 header.logo:hover .helloWorld{
     left:0;
 }
@@ -212,6 +221,8 @@ header ul li ul li{
     padding:0 0 0 0;
     width:100%;
     display:inline-block;
+    /*  */
+    /* min-height:100%; */
 }
 .mainWrapper .recentPostWrapper{
     float:left;
@@ -285,7 +296,6 @@ header ul li ul li{
 /* Topics List */
 .explorationSide .topicList{
     box-shadow:0px 0px 10px 2px #5C0120;
-
 }
 .explorationSide .topicList h2{
     text-align:center;
@@ -318,14 +328,21 @@ header ul li ul li{
     background-color:#5C0120;
     padding:0px 10px;
     font-size:1.5rem;
+    color:#DAD3B6;
 }
 .footer .aboutUs{
     flex:1;
     padding:5px;
 }
+.footer .aboutUs a{
+    color:#DAD3B6;
+}
 .footer .quickLinks{
     flex:1;
     padding:5px;
+}
+.footer .quickLinks ul li a{
+    color:#DAD3B6;
 }
 .footer .quickLinks ul li{
     padding:0 0 10px 0;
@@ -364,7 +381,7 @@ header ul li ul li{
     text-align:center;
     background-color:#DAD3B6;
 }
-@media screen and (max-width: 620px){
+@media screen and (max-width: 700px){
     /* v.0.0.1 */
     header{
         display:block;
@@ -403,21 +420,14 @@ header ul li ul li{
         display:flex;
         padding:18px 0 0 50px;
     }
-    /* v.0.0.1 */
+    /* v.0.0.2 */
     .postSlider .prev, .postSlider .next{
         width:30px;
     }
 }
-}
-/*  */
 /* .mainWrapper{
     display:none;
 }
 .pageWrapper{
     display:none;
 } */
-
-
-
-
-
