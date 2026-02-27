@@ -1,8 +1,10 @@
 .main-content-wrapper{
     display:flex;
-    justify-content:center;
-    padding:50px 0px;
+    justify-content:space-around;
+    padding:80px 0px;
+    margin:0px 5px;
 }
+.main-content-wrapper .login-form,
 .main-content-wrapper .register-form{
     /* border:2px solid white; */
     height:400px;
@@ -14,11 +16,18 @@
     border-radius:5px;
     gap:10px;
 }
-
+.login-section-none{
+    display:none;
+}
+.main-content-wrapper .register-form{
+    height:550px;
+}
+.main-content-wrapper .login-form label,
 .main-content-wrapper .register-form label{
     color:#DAD3B6;
     font-size:20px;
 }
+.main-content-wrapper .login-form input,
 .main-content-wrapper .register-form input{
     font-size:20px;
     padding:10px;
@@ -26,7 +35,8 @@
     border-color:aliceblue;
     border-radius:5px;
 }
-.main-content-wrapper .register-form #submit-btn{
+.main-content-wrapper .login-form #login-submit-btn,
+.main-content-wrapper .register-form #register-submit-btn{
     font-size:20px;
     font-weight:bold;
     padding:5px 10px;
@@ -37,15 +47,18 @@
     color:#5C0120;
     border-color:aliceblue;
 }
+.main-content-wrapper .login-form p,
 .main-content-wrapper .register-form p{
     text-align:center;
     color:#DAD3B6;
 }
+.main-content-wrapper .login-form p a,
 .main-content-wrapper .register-form p a{
     color:#DAD3B6;
     border-bottom:2px solid aliceblue;
     transition:all 0.3s;
 }
+.main-content-wrapper .login-form p a:hover,
 .main-content-wrapper .register-form p a:hover{
     padding-bottom:5px;
 }
