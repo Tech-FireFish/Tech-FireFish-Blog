@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech-FireFish-Blog</title>
     <link rel="icon" href="./image/Tech-FireFish-Blog.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="login-section.css">
 </head>
 <body>
@@ -19,26 +19,38 @@
         <button onclick="navToggle()" id="menuBtn">Menu</button>
         </div>
         <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Arcade</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../temp/Undeveloped.html">Arcade</a></li>
+            <li><a href="../temp/Undeveloped.html">About</a></li>
             <li>
                 <a class="user-dropdown" href="#">Username</a>
                 <ul>
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="../temp/Undeveloped.html">Profile</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>
             </li>
         </ul>
     </header>   
     <div class="main-content-wrapper">
-        <div class="register-form">
+        <div class="login-form">
             <label>Username</label>
             <input type="text" placeholder="Username...">
             <label>Password</label>
             <input type="text" placeholder="Password...">
-            <button id="submit-btn">Submit</button>
-            <p>Or <a>Sign up</a></p>
+            <button id="login-submit-btn">Submit</button>
+            <button onclick="loginToggle()" id="signup-btn">Sign up</button>
+        </div>
+        <div class="register-form">
+            <label>Username</label>
+            <input type="text" placeholder="Username...">
+            <label>Email Address</label>
+            <input type="text" placeholder="Username...">
+            <label>Password</label>
+            <input type="text" placeholder="Password...">
+            <label>Comfirm Password</label>
+            <input type="text" placeholder="Username...">
+            <button id="register-submit-btn">Submit</button>
+            <p>Or <a id="login-btn">Login</a></p>
         </div>
     </div>
 
@@ -54,10 +66,10 @@
             <div class="quickLinks">
                 <h1>QUICK LINKS</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Arcade</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../temp/Undeveloped.html">Arcade</a></li>
+                    <li><a href="../temp/Undeveloped.html">About</a></li>
+                    <li><a href="../temp/Undeveloped.html">Profile</a></li>
                 </ul>
             </div>
             <div class="contactUs">
@@ -69,5 +81,7 @@
         </div>
         <div class="copyright"><p>Copyright © 2025 Tech-FireFish-Blog. All rights reserved.</p></div>
     </div>
+    <script src="./login-section.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
