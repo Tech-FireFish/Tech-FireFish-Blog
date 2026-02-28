@@ -246,6 +246,7 @@ header ul li ul li{
     /* decoration */
     background-color:#DAD3B6;
     box-shadow:2px 2px 10px 0.5px #9d9883;
+    border:2px solid #DAD3B6;
 }
 .mainWrapper .recentPostWrapper .recentPost .recentPostInfo{
     /* border:2px solid orange; */
@@ -262,7 +263,6 @@ header ul li ul li{
 }
 .mainWrapper .recentPostWrapper .recentPost .recentPostInfo .description{
     /* position */
-    width:98.5%;
     padding:20px 20px 20px 0px;
     /* decoration */
     border:2px dashed #DAD3B6;
@@ -277,6 +277,7 @@ header ul li ul li{
     border-radius:2px;
     color:#DAD3B6;
     background-color:#9d9883;
+    font-weight:bold;
 }
 .mainWrapper .recentPostWrapper .recentPost .image-cut{
     overflow:hidden;
@@ -290,15 +291,16 @@ header ul li ul li{
     opacity:0.7;
 }
 .mainWrapper .explorationSide{
+    /* border:2px dotted red; */    
     float:right;
     width:30%;
-    height:800px;
-    /* border:2px dotted red; */
+    /* TEMP */
+    /* height:800px; */
 }
 /* Main Content - Exploration Side  */
 /* Search Bar */
-.explorationSide{
-    margin:107px 0px;
+.explorationSide .searchBar{
+    margin:126.4px 0px 0px;   
     padding:20px;   
 }
 .explorationSide .searchBar{
@@ -307,6 +309,7 @@ header ul li ul li{
     /* decoration */
     box-shadow:0px 0px 10px 2px #9d9883;
     background-color:#5C0120;
+    border:2px solid #DAD3B6;
 }
 .explorationSide .searchBar input{
     /* position */
@@ -375,8 +378,8 @@ header ul li ul li{
     transition:0.3s;
 }
 .explorationSide .topicList ul li a:hover{
-    /* position */
-    padding-left:15px;
+    /* decoration */
+    font-size:1.5rem;
     /* transition */
     transition:all 0.3s;
 }
