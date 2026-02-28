@@ -52,7 +52,6 @@ header .logo{
     padding-left:20px;
     height:inherit;
     /* TEMP */
-    /* height:inherit; */
     /* overflow:hidden; */
     /* width:45%; */
 }
@@ -70,8 +69,7 @@ header .logo .helloWorld{
     justify-content:center;
     transition:left 0.5s ease;
 }
-
-header.logo:hover .helloWorld{
+header .logo:hover .helloWorld{
     left:0;
 }
 header .logo a{ 
@@ -86,7 +84,7 @@ header .logo a{
 header .logo a:hover{
     color:currentColor;
 }
-header .logo #menuBtn{
+header #menuBtn{
     color:white;
     background-color:rgba(0, 0, 0, 0);
     border:none;
@@ -389,29 +387,34 @@ header ul li ul li{
         justify-content:none;
     }
     header .logo{
-        width:100%;
+        width:80%;
     }
     header ul{
         display:none;
+        float:none;
+        position:relative;
         z-index:999;
     }
-    header .logo #menuBtn{
+    header #menuBtn{
         display:block;
+        position:absolute;
+        top:0px;
+        right:0px;
     }
     /* .navigation style to toggle */
     .navActive{
         display:block;
     }
-    header ul{
-        display:none;
-    }
-    header ul{
-        float:none;
-    }
     header ul li{
         float:none;
         position:static;
     }
+    /* TEMP */
+    /* header ul li a{
+        text-align:start;
+        float:none;
+        position:static;
+    } */
     header ul li ul {
         position:static;
         /* display:block; */
@@ -426,9 +429,8 @@ header ul li ul li{
         width:30px;
     }
 }
-/* .mainWrapper{
-    display:none;
-}
-.pageWrapper{
+/* .mainWrapper,
+.footerWrapper,
+.postSlider{
     display:none;
 } */
