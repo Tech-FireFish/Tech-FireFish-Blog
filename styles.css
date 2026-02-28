@@ -4,6 +4,7 @@
 /* #5C0120 red */
 /* rgb(92, 1, 32) red */
 /* rgb(218, 211, 182) white */
+/* #9d9883 box-shadow use */
 /* Navigation Bar*/
 *{
     /* v.0.0.1 */
@@ -241,14 +242,19 @@ header ul li ul li{
     display:flex;
     margin:20px;
     height:300px;
+    position:relative;
     /* decoration */
     background-color:#DAD3B6;
     box-shadow:2px 2px 10px 0.5px #9d9883;
 }
 .mainWrapper .recentPostWrapper .recentPost .recentPostInfo{
     /* border:2px solid orange; */
-    margin:0 0 0 20px;
+    /* position */
+    margin:0 0 0 10px;
     width:100%;
+    position:absolute;
+    /* decoration */
+    color:#DAD3B6;
 }
 .mainWrapper .recentPostWrapper .recentPost .recentPostInfo div{
     display:flex;
@@ -259,7 +265,7 @@ header ul li ul li{
     width:98.5%;
     padding:20px 20px 20px 0px;
     /* decoration */
-    border:2px dashed black;
+    border:2px dashed #DAD3B6;
 }
 .mainWrapper .recentPostWrapper .recentPost .recentPostInfo a{
     /* position */
@@ -267,12 +273,21 @@ header ul li ul li{
     float:right;
     margin-right:10px;
     /* decoration */
-    border:2px solid black;
+    border:2px solid #DAD3B6    ;
     border-radius:2px;
+    color:#DAD3B6;
+    background-color:#9d9883;
 }
-.mainWrapper .recentPostWrapper .recentPost .recentPostImage{
-    width:300px;
-    height:100%;
+.mainWrapper .recentPostWrapper .recentPost .image-cut{
+    overflow:hidden;
+}
+.mainWrapper .recentPostWrapper .recentPost .image-cut .recentPostImage{
+    /* position */
+    position:relative;
+    top:-50%;
+    height:580px;
+    /* decoration */
+    opacity:0.7;
 }
 .mainWrapper .explorationSide{
     float:right;
@@ -441,55 +456,6 @@ header ul li ul li{
     /* decoration */
     font-size:1.2rem;
     cursor:pointer;
-}
-@media screen and (max-width: 700px){
-    /* v.0.0.1 */
-    header{
-        display:block;
-        justify-content:none;
-    }
-    header .logo{
-        width:80%;
-    }
-    header ul{
-        display:none;
-        float:none;
-        position:relative;
-        z-index:999;
-    }
-    header #menuBtn{
-        display:block;
-        position:absolute;
-        top:0px;
-        right:0px;
-    }
-    /* .navigation style to toggle */
-    .navActive{
-        display:block;
-    }
-    header ul li{
-        float:none;
-        position:static;
-    }
-    /* TEMP */
-    /* header ul li a{
-        text-align:start;
-        float:none;
-        position:static;
-    } */
-    header ul li ul {
-        position:static;
-        /* display:block; */
-    }
-    header ul li ul li a{
-        width:100%;
-        display:flex;
-        padding:18px 0 0 50px;
-    }
-    /* v.0.0.2 */
-    .postSlider .prev, .postSlider .next{
-        width:30px;
-    }
 }
 /* .mainWrapper,
 .footerWrapper,
