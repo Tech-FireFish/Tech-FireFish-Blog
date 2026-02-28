@@ -88,4 +88,7 @@
     .footerWrapper .footer .contactUs h1{
         margin:0 0 20px;
     }
+    header #menuBtn{
+        right:-80px;
+    }  
 }
