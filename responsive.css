@@ -1,0 +1,49 @@
+
+/* Window11 computer half screen width */
+@media screen and (max-width: 720px){
+    
+}
+/* For the menu btn to be visible on small screens */
+@media screen and (max-width: 700px){
+    /* v.0.0.1 */
+    header{
+        display:block;
+        justify-content:none;
+    }
+    header .logo{
+        width:80%;
+    }
+    header ul{
+        display:none;
+        float:none;
+        position:relative;
+        z-index:999;
+    }
+    header #menuBtn{
+        display:block;
+        position:absolute;
+        top:0px;
+        right:0px;
+    }
+    /* .navigation style to toggle */
+    .navActive{
+        display:block;
+    }
+    header ul li{
+        float:none;
+        position:static;
+    }
+    header ul li ul {
+        position:static;
+        /* display:block; */
+    }
+    header ul li ul li a{
+        width:100%;
+        display:flex;
+        padding:18px 0 0 50px;
+    }
+    /* v.0.0.2 */
+    .postSlider .prev, .postSlider .next{
+        width:30px;
+    }
+}
