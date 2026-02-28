@@ -1,8 +1,3 @@
-
-/* Window11 computer half screen width */
-@media screen and (max-width: 720px){
-    
-}
 /* For the menu btn to be visible on small screens */
 @media screen and (max-width: 700px){
     /* v.0.0.1 */
@@ -45,5 +40,52 @@
     /* v.0.0.2 */
     .postSlider .prev, .postSlider .next{
         width:30px;
+    }
+}
+/* Window11 computer half screen width */
+@media screen and (max-width: 760px){
+    /* main-content */
+    .mainWrapper .recentPostWrapper{
+        width:100%;
+    }
+    .mainWrapper .explorationSide{
+        /* display:none; */
+        /* position */
+        width:100%;
+        margin:0;
+    }
+    .mainWrapper .explorationSide .searchBar{
+        /* position */
+        margin:20px 10px 0px;
+        /* decoration */
+        border-radius:5px;
+        border:2px solid #DAD3B6;
+    }
+    .mainWrapper .explorationSide .topicList{
+        /* position */
+        margin:20px 10px 0px;
+        /* decoration */
+        border-radius:5px;
+        border:2px solid #DAD3B6;
+    }
+    /* footer */
+    .footerWrapper *{
+        /* decoration */
+        font-size:1.4rem;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 450px){
+    .footerWrapper .footer{
+        /* position */
+        display:block;
+        height:unset;
+        /* decoration */
+    }
+    .footerWrapper .footer div h1{
+        font-size:1.6rem;
+    }
+    .footerWrapper .footer .contactUs h1{
+        margin:0 0 20px;
     }
 }
