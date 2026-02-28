@@ -1,26 +1,50 @@
 .main-content-wrapper{
+    padding:80px 0px 0px;
     display:flex;
-    justify-content:space-around;
-    padding:80px 0px;
-    margin:0px 5px;
+    justify-content:center;
+}
+.main-content-wrapper .form-container{
+    position:relative;
+    width:400px;
+    overflow:hidden;
 }
 .main-content-wrapper .login-form,
 .main-content-wrapper .register-form{
     /* border:2px solid white; */
+    /* position */
     height:400px;
     width:400px;
     display:flex;
     flex-direction:column;
-    padding:50px 20px;
+    padding:20px 20px 10px;
+    /* decoration */
     background-color:#5C0120;
     border-radius:5px;
     gap:10px;
 }
-.login-section-none{
-    display:none;
+.main-content-wrapper .login-form{
+    position:absolute;
+    transform:translateX(0px);
+    transition:all 0.3s ease;
 }
 .main-content-wrapper .register-form{
-    height:550px;
+    transition:all 0.3s ease;
+    transform:translateX(400px);
+    /* TEMP */
+    /* position:relative; */
+}
+.main-content-wrapper.none  .login-form{
+    transform:translateX(-400px);
+}
+.main-content-wrapper.none  .register-form{
+    transform:translateX(0px);
+}
+.main-content-wrapper .register-form{
+    height:600px;
+}
+.main-content-wrapper .login-form h1,
+.main-content-wrapper .register-form h1{
+    color:#DAD3B6;
 }
 .main-content-wrapper .login-form label,
 .main-content-wrapper .register-form label{
