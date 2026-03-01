@@ -252,7 +252,7 @@ header ul li ul li{
     /* border:2px solid orange; */
     /* position */
     margin:0 0 0 10px;
-    width:100%;
+    width:99%;
     position:absolute;
     /* decoration */
     color:#DAD3B6;
@@ -465,3 +465,4 @@ header ul li ul li{
 .postSlider{
     display:none;
 } */
+
