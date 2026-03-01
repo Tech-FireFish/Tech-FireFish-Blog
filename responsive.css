@@ -73,6 +73,25 @@
         /* decoration */
         font-size:1.4rem;
     }
+        /* sample.html(blog) */
+    .main-content .article {
+        /* position */
+        float:none;
+        width:100%;
+        margin:155px 0px 20px;
+    }
+    .main-content .side-bar{
+        /* position */
+        float:none;
+        width:100%;
+    }
+    .main-content .side-bar .author-profile{
+        /* position */
+        position:absolute;
+        margin:-9px;
+        width:100%;
+        top:80px;
+    }
 }
 /* Mobile */
 @media screen and (max-width: 450px){
