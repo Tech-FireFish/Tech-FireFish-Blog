@@ -5,31 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech-FireFish-Blog</title>
     <link rel="icon" href="./image/Tech-FireFish-Blog.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
     <!-- Navigation Bar build -->
     <header>
-        <link rel="stylesheet" href="styles.css">
         <!-- <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
         <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/> -->
         <div class="logo">
-        <a><span style="color:rgb(243, 243, 243);">TECH </span>FIREFISH</a>
-        <div class="helloWorld">Hello World</div>
-        <button onclick="navToggle()" id="menuBtn">Menu</button>
+            <a>TECH FIREFISH</a>
+            <div class="helloWorld">Hello World</div>
         </div>
+        <button onclick="navToggle()" id="menuBtn">Menu</button>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Arcade</a></li>
-            <li><a href="#">About</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="./temp/Undeveloped.html">Arcade</a></li>
+            <li><a href="./temp/Undeveloped.html">About</a></li>
             <li>
-                <a class="user-dropdown" href="#">Username</a>
+                <a class="user-dropdown" href="./login-section/login-section.html">Username/Login</a>
                 <ul>
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="./temp/Undeveloped.html">Profile</a></li>
                     <li><a href="#">Logout</a></li>
                 </ul>
             </li>
         </ul>
-        
     </header>   
     
     
@@ -40,10 +40,11 @@
             <p class="prev"><</p>
             <p class="next">></p>
             <div class="postWrapper">
+                
                 <div class="post">
                     <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
                     <div class="postInfo">
-                        <h4><a href="#">Game Of The 2025</a></h4>
+                        <h4><a href="./blog/sample.html">Game Of The 2025</a></h4>
                         <p>Author</p>
                         <p>Date of publication</p>
                     </div>
@@ -51,7 +52,7 @@
                 <div class="post">
                     <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
                     <div class="postInfo">
-                        <h4><a href="#">Game Of The 2024</a></h4>
+                        <h4><a href="./blog/sample.html">Game Of The 2024</a></h4>
                         <p>Author</p>
                         <p>Date of publication</p>
                     </div>
@@ -59,7 +60,7 @@
                 <div class="post">
                     <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
                     <div class="postInfo">
-                        <h4><a href="#">Game Of The 2023</a></h4>
+                        <h4><a href="./blog/sample.html">Game Of The 2023</a></h4>
                         <p>Author</p>
                         <p>Date of publication</p>
                     </div>
@@ -67,7 +68,7 @@
                 <div class="post">
                     <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
                     <div class="postInfo">
-                        <h4><a href="#">Game Of The 2022</a></h4>
+                        <h4><a href="./blog/sample.html">Game Of The 2022</a></h4>
                         <p>Author</p>
                         <p>Date of publication</p>
                     </div>
@@ -75,23 +76,31 @@
                 <div class="post">
                     <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="sliderImage">
                     <div class="postInfo">
-                        <h4><a href="#">Game Of The 2021</a></h4>
+                        <h4><a href="./blog/sample.html">Game Of The 2021</a></h4>
                         <p>Author</p>
                         <p>Date of publication</p>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
 
     <!-- Main Content  -->
     <div class="mainWrapper">
+        <!-- Part2 search bar-->
+        <div class="explorationSide">
+            <div class="searchBar">
+                <input type="text" placeholder="Search Input">
+                <button>Search</button>
+            </div>
+        </div>
         <!-- Part 1 -->
         <div class="recentPostWrapper">
             <p style="font-size:40px;margin-left:20px;font-weight:bold;color:#5C0120;">Recent Posts</p>
             <div class="recentPost">
-                <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="recentPostImage">
+                <div class="image-cut">
+                    <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="recentPostImage">
+                </div>
                 <div class="recentPostInfo">
                     <h1>Game Of The 2021</h1>
                     <div>
@@ -103,7 +112,9 @@
                 </div>
             </div>
             <div class="recentPost">
-                <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="recentPostImage">
+                <div class="image-cut">
+                    <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="recentPostImage">
+                </div>
                 <div class="recentPostInfo">
                     <h1>Game Of The 2021</h1>
                     <div>
@@ -111,11 +122,13 @@
                     <p>Date of publication</p>
                     </div>
                     <p class="description">Description: Blank </p>
-                    <a href="#">Read More</a>
+                    <a href="./blog/sample.html">Read More</a>
                 </div>
             </div>
             <div class="recentPost">
-                <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="recentPostImage">
+                <div class="image-cut">
+                    <img src="./image/rick_and_morty_car_drive.jpg" alt="" class="recentPostImage">
+                </div>
                 <div class="recentPostInfo">
                     <h1>Game Of The 2021</h1>
                     <div>
@@ -123,29 +136,24 @@
                     <p>Date of publication</p>
                     </div>
                     <p class="description">Description: Blank </p>
-                    <a href="#">Read More</a>
+                    <a href="./blog/sample.html">Read More</a>
                 </div>
             </div>
         </div>
-        <!-- Part 2 -->
+        <!-- Part2 topic list -->
         <div class="explorationSide">
-            <div class="searchBar">
-                <input type="text" placeholder="Search Input">
-                <button>Search</button>
-            </div>
             <div class="topicList">
                 <h2>Topics</h2>
                 <ul>
-                    <li><a href="#">Topic 1</a></li>
-                    <li><a href="#">Topic 2</a></li>
-                    <li><a href="#">Topic 3</a></li>
-                    <li><a href="#">Topic 4</a></li>
-                    <li><a href="#">Topic 5</a></li>
+                    <li><a href="./temp/Undeveloped.html">Topic 1</a></li>
+                    <li><a href="./temp/Undeveloped.html">Topic 2</a></li>
+                    <li><a href="./temp/Undeveloped.html">Topic 3</a></li>
+                    <li><a href="./temp/Undeveloped.html">Topic 4</a></li>
+                    <li><a href="./temp/Undeveloped.html">Topic 5</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    
     <!-- Footer -->
     <div class="footerWrapper">
         <div class="footer">
@@ -154,15 +162,15 @@
                 <p>Description: blank</p>
                 <p>Contact Number: 123-456-789</p>
                 <p>Email: info@techfirefish.com</p>
-                <a href="#">Social Media</a>
+                <a href="./temp/Undeveloped.html">Social Media</a>
             </div>
             <div class="quickLinks">
                 <h1>QUICK LINKS</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Arcade</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./temp/Undeveloped.html">Arcade</a></li>
+                    <li><a href="./temp/Undeveloped.html">About</a></li>
+                    <li><a href="./temp/Undeveloped.html">Profile</a></li>
                 </ul>
             </div>
             <div class="contactUs">
@@ -174,7 +182,7 @@
         </div>
         <div class="copyright"><p>Copyright © 2025 Tech-FireFish-Blog. All rights reserved.</p></div>
     </div>
-    <script src="jquery-3.3.1.js"></script>
+    <script src="./assets/jquery-3.3.1.js"></script>
     <script type="text/javascript" src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="script.js"></script>
 </body>

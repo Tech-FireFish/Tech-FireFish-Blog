@@ -1,0 +1,110 @@
+/* For the menu btn to be visible on small screens */
+@media screen and (max-width: 700px){
+    /* v.0.0.1 */
+    header{
+        display:block;
+        justify-content:none;
+    }
+    header .logo{
+        width:80%;
+    }
+    header ul{
+        display:none;
+        float:none;
+        position:relative;
+        z-index:999;
+    }
+    header #menuBtn{
+        display:block;
+        position:absolute;
+        top:0px;
+        right:0px;
+    }
+    /* .navigation style to toggle */
+    .navActive{
+        display:block;
+    }
+    header ul li{
+        float:none;
+        position:static;
+    }
+    header ul li ul {
+        position:static;
+        /* display:block; */
+    }
+    header ul li ul li a{
+        width:100%;
+        display:flex;
+        padding:18px 0 0 50px;
+    }
+    /* v.0.0.2 */
+    .postSlider .prev, .postSlider .next{
+        width:30px;
+    }
+}
+/* Window11 computer half screen width */
+@media screen and (max-width: 760px){
+    /* main-content */
+    .mainWrapper .recentPostWrapper{
+        width:99%;
+    }
+    .mainWrapper .explorationSide{
+        /* display:none; */
+        /* position */
+        width:100%;
+        margin:0;
+    }
+    .mainWrapper .explorationSide .searchBar{
+        /* position */
+        margin:20px 10px 0px;
+        /* decoration */
+        border-radius:5px;
+        border:2px solid #DAD3B6;
+    }
+    .mainWrapper .explorationSide .topicList{
+        /* position */
+        margin:20px 10px 0px;
+        /* decoration */
+        border-radius:5px;
+        border:2px solid #DAD3B6;
+    }
+    /* footer */
+    .footerWrapper *{
+        /* decoration */
+        font-size:1.4rem;
+    }
+        /* sample.html(blog) */
+    .main-content .article {
+        /* position */
+        float:none;
+        width:100%;
+        margin:155px 0px 20px;
+    }
+    .main-content .side-bar{
+        /* position */
+        float:none;
+        width:100%;
+    }
+    .main-content .side-bar .author-profile{
+        /* position */
+        position:absolute;
+        margin:-9px;
+        width:100%;
+        top:80px;
+    }
+}
+/* Mobile */
+@media screen and (max-width: 450px){
+    .footerWrapper .footer{
+        /* position */
+        display:block;
+        height:unset;
+        /* decoration */
+    }
+    .footerWrapper .footer div h1{
+        font-size:1.6rem;
+    }
+    .footerWrapper .footer .contactUs h1{
+        margin:0 0 20px;
+    }
+}

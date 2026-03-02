@@ -2,6 +2,9 @@
 /* rgb(156, 223, 250) */
 /* #DAD3B6 white */
 /* #5C0120 red */
+/* rgb(92, 1, 32) red */
+/* rgb(218, 211, 182) white */
+/* #9d9883 box-shadow use */
 /* Navigation Bar*/
 *{
     /* v.0.0.1 */
@@ -14,20 +17,27 @@ a{
     color:#000000;
 }
 a:hover{
-    color:#5C0120;
+    color:rgb(92, 1, 32);
 }
+button,
+a{
+    cursor:pointer;
+}
+html,
 body{
     /* v.0.0.1 */
-    background-color:#DAD3B6;
+    background-color:rgb(218, 211, 182);
     background-size:cover;
     margin:0px;
     padding:0px;
-    /*  */
+    /* TEMP */
+    height:100%;
 }
 header{
     /* v.0.0.1 */
     background:#5C0120;
     height:55px;
+    /* flex positioning */
     display:flex;
     justify-content:space-between;
     /*  */
@@ -37,15 +47,14 @@ header .logo{
     color:aliceblue;
     font-size:30px;
     font-weight:bold;
-    height:inherit;
     /* inherit covers the given header height */
     /* helloWorld sliding */
     position:relative;
-    /* overflow:hidden; */
     padding-left:20px;
-    /* Refactor */
-    width:45%;
-
+    height:inherit;
+    /* TEMP */
+    /* overflow:hidden; */
+    /* width:45%; */
 }
 header .logo .helloWorld{
     position:absolute;
@@ -59,9 +68,8 @@ header .logo .helloWorld{
     align-items:center;
     justify-content:center;
     transition:left 0.5s ease;
-    /*  */
 }
-header.logo:hover .helloWorld{
+header .logo:hover .helloWorld{
     left:0;
 }
 header .logo a{ 
@@ -76,7 +84,7 @@ header .logo a{
 header .logo a:hover{
     color:currentColor;
 }
-header .logo #menuBtn{
+header #menuBtn{
     color:white;
     background-color:rgba(0, 0, 0, 0);
     border:none;
@@ -148,29 +156,34 @@ header ul li ul li{
 }
 /* Trending Post Title */
 #headline{
+    /* position */
     margin:0;
-    color:#5C0120;
-    font-size:35px;
     text-align:center;
     padding:30px 0;
+    /* decoration */
     font-weight:bold;
+    color:rgb(92, 1, 32);
+    font-size:35px;
 }
 /* Post Slider */
 .pageWrapper{
     display:block;
+    /*  */
+    /* min-height:100%; */
 }
 .prev, .next{
+    /* position */
     width:40px;
-    cursor:pointer;
     text-align:center;
-    /* arrow Design */
+    margin:117px 0 0 0;
+    padding:20px 0;
+    /* decoration */
     color:#5C0120;
     font-weight:bold;
     font-size:30px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;    
-    margin:117px 0 0 0;
-    padding:20px 0;
-    background-color:rgba(0, 0, 0, 0.2);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
+    background-color:rgba(0, 0, 0, 0.2);  
+    cursor:pointer;
 }
 .postSlider .prev{
     float:left;
@@ -180,152 +193,238 @@ header ul li ul li{
 }
 .postSlider .postWrapper{
     /* border:2px dashed black; */
-    width:82%;
-    height:350px;
-    margin: 0px auto;
+    height:360px;
     overflow:hidden;
     padding: 0px 5px;
+    /* TEMP */
+    /* width:82%; */
+    /* margin: 0px auto; */
 }
 .postSlider .postWrapper .sliderImage{
-    width:100%;
-    height:50%;
-    border-top-left-radius:15px;
+    width: 100%;
+    height:55%;
 }
 .postSlider .postWrapper .post{
-    background-color:white;
+    /* decoration */
+    box-shadow:1rem 1rem 1rem -0.9rem #9d9883; 
+    /* position */
     width:300px;
-    height:350px;
+    height:400px;
     display:inline-block;
-    margin:10px;
-    /* for the post image */
-    border-top-left-radius:15px;
+    margin:0px 10px;
+    /* TEMP */
+    /* background-color:#DAD3B6; */
     /*  */
-    box-shadow:1rem 1rem 1rem -0.9rem grey;
 }
 .postSlider .postWrapper .post .postInfo{
     margin:5px;
 }
 /* Main Content - Recent Post */
 .mainWrapper{
-    border:2px dotted black;
-    margin:10px 0 0 0;
-    padding:0 0 0 0;
+    /* border:2px dotted black; */
+    /* position */
     width:100%;
     display:inline-block;
+    /* TEMP */
+    /* padding:0 0 0 0; */
+    /* margin:10px 0 0 0; */
+    /* min-height:100px; */
 }
 .mainWrapper .recentPostWrapper{
+    /* position */
     float:left;
     width:70%;
     /* border:2px solid blue; */
 }
 .mainWrapper .recentPostWrapper .recentPost{
-    margin:20px;
     /* border:2px solid green; */
-    height:300px;
+    /* position */
     display:flex;
+    margin:20px;
+    height:300px;
+    position:relative;
+    /* decoration */
     background-color:#DAD3B6;
-    box-shadow:2px 2px 10px 0.5px #5C0120;
+    box-shadow:2px 2px 10px 0.5px #9d9883;
+    border:2px solid #DAD3B6;
 }
 .mainWrapper .recentPostWrapper .recentPost .recentPostInfo{
     /* border:2px solid orange; */
-    margin:0 0 0 20px;
-    width:100%;
+    /* position */
+    margin:0 0 0 10px;
+    width:99%;
+    position:absolute;
+    /* decoration */
+    color:#DAD3B6;
 }
 .mainWrapper .recentPostWrapper .recentPost .recentPostInfo div{
     display:flex;
     gap:5px;
 }
 .mainWrapper .recentPostWrapper .recentPost .recentPostInfo .description{
-    border:2px dashed black;
+    /* position */
     padding:20px 20px 20px 0px;
-    width:100%;
+    /* decoration */
+    border:2px dashed #DAD3B6;
 }
 .mainWrapper .recentPostWrapper .recentPost .recentPostInfo a{
-    border:2px solid black;
-    border-radius:2px;
+    /* position */
     padding:10px;
     float:right;
     margin-right:10px;
+    /* decoration */
+    border:2px solid #DAD3B6    ;
+    border-radius:2px;
+    color:#DAD3B6;
+    background-color:#9d9883;
+    font-weight:bold;
 }
-.mainWrapper .recentPostWrapper .recentPost .recentPostImage{
-    width:300px;
-    height:100%;
+.mainWrapper .recentPostWrapper .recentPost .image-cut{
+    overflow:hidden;
+}
+.mainWrapper .recentPostWrapper .recentPost .image-cut .recentPostImage{
+    /* position */
+    position:relative;
+    top:-50%;
+    height:580px;
+    /* decoration */
+    opacity:0.7;
 }
 .mainWrapper .explorationSide{
+    /* border:2px dotted red; */    
     float:right;
     width:30%;
-    height:800px;
-    /* border:2px dotted red; */
+    /* TEMP */
+    /* height:800px; */
 }
 /* Main Content - Exploration Side  */
 /* Search Bar */
-.explorationSide{
-    margin:20px 0px;
+.explorationSide .searchBar{
+    margin:126.4px 0px 0px;   
     padding:20px;   
 }
 .explorationSide .searchBar{
+    /* position */
     padding:10px;
-    box-shadow:0px 0px 10px 2px #5C0120;
+    /* decoration */
+    box-shadow:0px 0px 10px 2px #9d9883;
+    background-color:#5C0120;
+    border:2px solid #DAD3B6;
 }
 .explorationSide .searchBar input{
+    /* position */
     width:100%;
     padding:10px;
+    /* decoration */
     font-size:20px;
     border:none;
     border-radius:2px;
+    background-color:transparent;
+    outline:none;
+    border-bottom:2px solid #DAD3B6;
+}
+.explorationSide .searchBar input::placeholder{
+    color:#DAD3B6;
 }
 .explorationSide .searchBar button{
-    background-color:rgb(0,0,0,0);
-    border-radius:2px;
-    border-color:aliceblue;
-    font-size:1rem;
+    /* position */
     margin:10px 0 0 0;
+    /* decoration */
+    color:#DAD3B6;
+    background-color:transparent;
+    border-radius:5px;
+    border-color:#DAD3B6;
+    font-size:1.1rem;
+    font-weight:bold;
     cursor:pointer;
 }
 /* Topics List */
 .explorationSide .topicList{
-    box-shadow:0px 0px 10px 2px #5C0120;
-
+    /* position */
+    margin:20px 0 0 0;
+    /* decoration */
+    border-radius:5px;
+    background-color:#5C0120;
+    box-shadow:0px 0px 10px 2px #9d9883;
 }
 .explorationSide .topicList h2{
+    /* position */
     text-align:center;
+    padding-top:20px;  
+    margin:0; 
+    /* decoration */
     font-weight:bold;
-    padding-top:20px;   
+    color:#DAD3B6;
 }
 .explorationSide .topicList ul{
-    list-style:none;
+    /* position */
     padding:10px 20px;
-    margin:0px;
+    margin:0px;    
+    /* decoration */
+    list-style:none;
 }
 .explorationSide .topicList ul li{
     margin:10px 0px;
-    border-bottom:2px solid black;
+    border-bottom:2px solid #DAD3B6;
     padding:20px 0px;
 }
 .explorationSide .topicList ul li a{
+    /* position */
+    padding:20px 20px 20px 0px;
+    /* decoration */
+    font-size:1.1rem;
+    color:#DAD3B6;
+    /* transition */
     transition:0.3s;
 }
 .explorationSide .topicList ul li a:hover{
-    padding-left:10px;
+    /* decoration */
+    font-size:1.5rem;
+    /* transition */
     transition:all 0.3s;
 }
 /* Footer */
+.footerWrapper .copyright{
+    /* position */
+    height:40px;
+    width:100%;
+    text-align:center;
+    position:relative;
+    bottom:-210px;
+    width:100%;
+    /* decoration */
+    background-color:#DAD3B6;
+    /*  */  
+}
 .footer{
+    /* position */
     display:flex;
     gap:30px;
     width:100%;
     height:350px;
+    padding:0px 10px;   
+    /* stick to bottom */
+    position:relative;
+    bottom:-210px;
+    width:100%;
+    /* decoration */
     background-color:#5C0120;
-    padding:0px 10px;
     font-size:1.5rem;
+    color:#DAD3B6;
 }
 .footer .aboutUs{
     flex:1;
     padding:5px;
 }
+.footer .aboutUs a{
+    color:#DAD3B6;
+}
 .footer .quickLinks{
     flex:1;
     padding:5px;
+}
+.footer .quickLinks ul li a{
+    color:#DAD3B6;
 }
 .footer .quickLinks ul li{
     padding:0 0 10px 0;
@@ -342,80 +441,28 @@ header ul li ul li{
 .footer .contactUs input,
 .footer .contactUs textarea,
 .footer .contactUs button{
+    /* position */
+    padding:10px 0px;
+    /* decoration */
     background-color:rgb(218, 211, 182);
     border-radius:2px;
     border:2px solid rgb(218, 211, 182);
-    padding:10px 0px;
 }
 .footer .contactUs textarea{
     height:200px;
 }
 .footer .contactUs button{
-    font-size:1.2rem;
-    float:right;
+    /* position */
+    float:right;    
     margin:0px 0 0 auto;
     width:50px;
+    /* decoration */
+    font-size:1.2rem;
     cursor:pointer;
-    float:right;
 }
-.footerWrapper .copyright{
-    height:40px;
-    width:100%;
-    text-align:center;
-    background-color:#DAD3B6;
-}
-@media screen and (max-width: 620px){
-    /* v.0.0.1 */
-    header{
-        display:block;
-        justify-content:none;
-    }
-    header .logo{
-        width:100%;
-    }
-    header ul{
-        display:none;
-        z-index:999;
-    }
-    header .logo #menuBtn{
-        display:block;
-    }
-    /* .navigation style to toggle */
-    .navActive{
-        display:block;
-    }
-    header ul{
-        display:none;
-    }
-    header ul{
-        float:none;
-    }
-    header ul li{
-        float:none;
-        position:static;
-    }
-    header ul li ul {
-        position:static;
-        /* display:block; */
-    }
-    header ul li ul li a{
-        width:100%;
-        display:flex;
-        padding:18px 0 0 50px;
-    }
-    /* v.0.0.1 */
-    .postSlider .prev, .postSlider .next{
-        width:30px;
-    }
-}
-}
-/*  */
-/* .mainWrapper{
-    display:none;
-}
-.pageWrapper{
+/* .mainWrapper,
+.footerWrapper,
+.postSlider{
     display:none;
 } */
-
-
 
