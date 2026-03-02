@@ -17,9 +17,6 @@ This is a fully responsive Blog website that adapts seamlessly across different 
 ## Features
 - **Responsive Design:** Fully responsive across various screen sizes.
 - **Navigation Bar:** A sticky navigation bar with smooth scrolling to different sections of the site.
-- **Hero Section:** A personalized introduction with a call-to-action button leading to the projects section.
-- **Services Section:** A brief overview of services offered with icons and descriptions.
-- **Projects Section:** Displays a list of recent projects with descriptions and images.
 - **About Section:** Contains personal information, including a downloadable resume.
 - **Contact Section:** Includes phone number, email, and address with icons for easy access.
 - **Footer:** A footer with social media links and branding.
