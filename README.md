@@ -15,10 +15,13 @@ Welcome to my Blog website! This project showcases my skills in front-end web de
 This is a fully responsive Blog website that adapts seamlessly across different devices, including mobile, tablet, and desktop. The site includes multiple sections such as Home, Arcade, About, Login, User Profile, which can be easily navigated using the top navigation bar.
 
 ## Features
-- **Responsive Design:** Fully responsive across various screen sizes.
-- **Navigation Bar:** A sticky navigation bar with smooth scrolling to different sections of the site.
-- **About Section:** Contains personal information, including a downloadable resume.
-- **Contact Section:** Includes phone number, email, and address with icons for easy access.
+- **Home Page:** Loading...
+- **Arcade:** Loading...
+- **About Section:** Loading...
+- **Login Page:** A webpage built with both login and registration conponent together through trnasitions.
+- **Admin Dashboard Page** Loading...
+- **User Profile** Loading...
+- **Contact Section:** Loading...
 - **Footer:** A footer with social media links and branding.
 
 ## Technologies Used
@@ -31,21 +34,25 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
    ```bash
-   Missed
+   git clone https://github.com/Tech-FireFish/Tech-FireFish-Blog.git
    ```
 2. Navigate to the project directory:
    ```bash
-   Missed
+   cd Tech-FireFish-Blog
    ```
 3. Open the `index.html` file in your preferred browser to view the website.
 
 ## Folder Structure
 ```bash
-portfolio-website/
+Tech-FireFish-Blog/
 │
-├── 
+│
 │   
 │   
+│
+│
+│
+├── responsive.css
 ├── styles.css
 ├── index.html
 └── index.js
