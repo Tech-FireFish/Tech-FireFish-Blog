@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-FireFish-Blog</title>
+    <link rel="icon" href="../image/Tech-FireFish-Blog.png">
+    <link rel="stylesheet" href="./dashboard.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../responsive.css">
+</head>
+<body>
+    <!-- Navigation Bar build -->
+    <header>
+        <!-- <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/> -->
+        <div class="logo">
+            <a>TECH FIREFISH</a>
+            <div class="helloWorld">Hello World</div>
+        </div>
+        <button onclick="navToggle()" id="menuBtn">Menu</button>
+        <ul class="navigation">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../temp/Undeveloped.html">Arcade</a></li>
+            <li><a href="../temp/Undeveloped.html">About</a></li>
+            <li>
+                <a class="user-dropdown" href="../login-section/login-section.html">Username/Login</a>
+                <ul>
+                    <li><a href="../temp/Undeveloped.html">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>  
+    <!-- Options Bar -->
+    <div class="dashboard-wrapper">
+        <div class="option-wrapper">
+            <ul>
+                <li><a href="#">Post Manage</a></li>
+                <li><a href="#">User Manage</a></li>
+                <li><a href="#">Topic Manage</a></li>
+            </ul>
+        </div>
+        <div class="option-screen-wrapper">
+                <div class="post-manage">
+                    <button id="add-post-btn">Add New Post</button>
+                    <button id="post-manage-btn">Manage Posts</button>
+                    <h1>Post Management</h1>
+                    <div class="post-in-record">
+                        <p>Name of the post</p>
+                        <div class="operatioin">
+                            <button id="edit-btn">Edit</button>
+                            <button id="remove-btn">Remove</button>
+                            <button id="publish-btn">Publish</button>
+                        </div>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
