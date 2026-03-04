@@ -43,18 +43,41 @@
         </div>
         <div class="option-screen-wrapper">
                 <div class="post-manage">
-                    <button id="add-post-btn">Add New Post</button>
-                    <button id="post-manage-btn">Manage Posts</button>
-                    <h1>Post Management</h1>
-                    <div class="post-in-record">
-                        <p>Name of the post</p>
-                        <div class="operatioin">
-                            <button id="edit-btn">Edit</button>
-                            <button id="remove-btn">Remove</button>
-                            <button id="publish-btn">Publish</button>
-                        </div>
+                    <div class="post-btn-group">
+                        <a href="create.html" class="add-post-btn">Add New Post</a>
+                        <a href="dashboard.html" class="post-manage-btn">Manage Posts</a>
                     </div>
-                    
+                    <div class="content">
+                        <h2 class="page-title">Posts Manage</h2>
+                        <table>
+                            <thead>
+                                <th>SN</th>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th colspan="3">Action</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>This is the ifrst post</td>
+                                    <td>Fish</td>
+                                    <td><a href="#" class="edit">edit</a></td>
+                                    <td><a href="#" class="delete">detele</a></td>
+                                    <td><a href="#" class="publish">publish</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>This is the ifrst post</td>
+                                    <td>Fire</td>
+                                    <td><a href="#" class="edit">edit</a></td>
+                                    <td><a href="#" class="delete">detele</a></td>
+                                    <td><a href="#" class="publish">publish</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                    </div>
                 </div>
         </div>
     </div>
