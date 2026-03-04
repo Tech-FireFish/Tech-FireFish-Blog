@@ -58,22 +58,95 @@
     padding:5px 10px;
     /* decoration */
 }
-.option-screen-wrapper .post-manage {
+.option-screen-wrapper .post-manage .post-btn-group{
+    border:2px solid purple;
     /* position */
-    border:2px solid black;
-    height:auto;
+    display:flex;
+    gap:20px;
 }
-.option-screen-wrapper .post-manage h1{
+.option-screen-wrapper .post-manage .post-btn-group .add-post-btn,
+.option-screen-wrapper .post-manage .post-btn-group .post-manage-btn{
+    border:2px solid #DAD3B8;
+    /* position */
+    margin:20px;
+    padding:15px 35px;
+    /* decoration */
+    font-size:20px;
+    font-weight:bold;
+    border-radius:5px;
+    background-color:#5C0120;
+    color:#DAD3B6;
+    box-shadow:1px 1px 1rem 0.1rem #9a9581;
+}
+.option-screen-wrapper .post-manage .post-btn-group .add-post-btn:hover,
+.option-screen-wrapper .post-manage .post-btn-group .post-manage-btn:hover{
+    filter: brightness(150%) saturate(100%);
+}
+.option-screen-wrapper .post-manage .content{
+    /* border:2px solid orange; */
+    /* position */
+    margin:0px 20px;
+
+}
+.option-screen-wrapper .post-manage .content h2{
+    /* border:2px solid yellow; */
+    /* position */
     text-align:center;
+
 }
-.option-screen-wrapper .post-manage .post-in-record{
-    border:2px solid black;
+.option-screen-wrapper .post-manage .content table{
+    /* border:2px dashed black; */
     /* position */
-    display:flex;
+    width:100%;
+    border-collapse:collapse;
+    /* decoration */
+    font-size:1.1rem;
 }
-.option-screen-wrapper .post-manage .post-in-record .operation{
+.option-screen-wrapper .post-manage .content table thead th,
+.option-screen-wrapper .post-manage .content table tbody tr td{
+    padding:15px;
+    text-align:left;
+    border-bottom:1px solid black;
+}
+.option-screen-wrapper .post-manage .content table tbody tr td .edit{
+    /* decoration */
+    color:green
+}
+.option-screen-wrapper .post-manage .content table tbody tr td .delete{
+    /* decoration */
+    color:red;
+}
+.option-screen-wrapper .post-manage .content table tbody tr td .publish{
+    /* decoration */
+    color:blue;
+}
+.option-screen-wrapper .post-manage .content table tbody tr td .edit:hover,
+.option-screen-wrapper .post-manage .content table tbody tr td .delete:hover,
+.option-screen-wrapper .post-manage .content table tbody tr td .publish:hover{
+    /* decoration */
+    border-bottom:2px solid currentColor;
+    /* transition */
+    /* transition:all 0.3s; */
+}
+/* create.html */
+.option-screen-wrapper .post-manage .content{
+    border:2px solid grey;
+}
+.option-screen-wrapper .post-manage .content form div label{
+    /* decoration */
+    font-weight:bold;
+    font-size:25px;
+}
+.option-screen-wrapper .post-manage .content form div input{
     /* position */
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    width:100%;
+    padding:10px;
+    /* decoration */
+    font-size:20px;
+}
+.option-screen-wrapper .post-manage .content form div textarea{
+    /* positioin */
+    min-width:100%;
+    max-width:100%;
+    min-height:200px;
 }
