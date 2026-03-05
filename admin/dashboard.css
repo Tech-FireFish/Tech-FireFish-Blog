@@ -146,7 +146,36 @@
 }
 .option-screen-wrapper .post-manage .content form div textarea{
     /* positioin */
-    min-width:100%;
+    /* min-width:100%;
     max-width:100%;
-    min-height:200px;
+    min-height:200px; */
+}
+.option-screen-wrapper .post-manage .content form div label{
+    /* position */
+    display:inline-block;
+    padding:10px;
+    margin:10px 10px;
+    /* decoration */
+    color:#5C0120;
+}
+.option-screen-wrapper .post-manage .content form div select{
+    /* position */
+    width:100%;
+    padding:5px 10px;
+    margin:5px 0px;
+    /* decoration */
+    font-size:15px;
+    border:2px solid #9a9581;
+    color:#DAD3B6;
+    background-color:#5C0120;
+}
+.option-screen-wrapper .post-manage .content form div .new-post-submit-btn{
+    /* position */
+    border-radius:5px;
+    padding:5px;
+    margin:10px;
+    /* decoration */
+    font-size:20px;
+    background-color:#5C0120;
+    color:#DAD3B6;
 }
