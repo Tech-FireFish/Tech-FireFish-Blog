@@ -1,7 +1,7 @@
 # Responsive Blog Website
 
 Welcome to my Blog website! This project showcases my skills in front-end web development, featuring a clean and responsive design built using HTML, CSS, and JavaScript.
-
+![showcase-image](./image/rick_and_morty_car_drive.jpg)
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
