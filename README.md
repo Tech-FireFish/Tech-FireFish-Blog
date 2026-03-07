@@ -1,9 +1,7 @@
 # Responsive Blog Website
 
 Welcome to my Blog website! This project showcases my skills in front-end web development, featuring a clean and responsive design built using HTML, CSS, and JavaScript.
-![showcase-image](./assets/image/part-1.png)
-![showcase-image](./assets/image/part-2.png)
-![showcase-image](./assets/image/part-3.png)
+
 ## Table of Contents
 - [Project Overview](#project-overview)
 - [Features](#features)
