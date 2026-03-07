@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-FireFish-Blog</title>
+    <link rel="icon" href="../image/Tech-FireFish-Blog.png">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../../ckeditor5-47.5.0/ckeditor5/ckeditor5.css">
+</head>
+<body>
+    <!-- Navigation Bar build -->
+    <header>
+        <div class="logo">
+            <a>TECH FIREFISH</a>
+            <div class="helloWorld">Hello World</div>
+        </div>
+        <button onclick="navToggle()" id="menuBtn">Menu</button>
+        <ul class="navigation">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./Undeveloped.html">Arcade</a></li>
+            <li><a href="./Undeveloped.html">About</a></li>
+            <li>
+                <a class="user-dropdown" href="./login-section.html">Username/Login</a>
+                <ul>
+                    <li><a href="./Undeveloped.html">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>  
+    <!-- Options Bar -->
+    <div class="dashboard-wrapper">
+        <div class="option-wrapper">
+            <ul>
+                <li><a href="#">Post Manage</a></li>
+                <li><a href="#">User Manage</a></li>
+                <li><a href="#">Topic Manage</a></li>
+            </ul>
+        </div>
+        <div class="option-screen-wrapper">
+            <div class="post-manage">
+                <div class="post-btn-group">
+                    <a href="create.html" class="add-post-btn">Add New Post</a>
+                    <a href="./dashboard.html" class="post-manage-btn">Manage Posts</a>
+                </div>
+                <div class="content">
+                    <h2 class="page-title">Posts Manage</h2>
+                    <form action="create.html" method="post">
+                        <div>
+                            <label>Title</label>
+                            <input type="text" name="title" class="text-input">
+                        </div>
+                        <div>
+                            <label>Body</label>
+                            <div id="editor">
+                            <textarea name="editor" row="40" cols="20" id="editor"></textarea>
+                            </div>
+                        </div>
+                        <div>
+                            <label>Topics</label>
+                            <select name="topics">
+                                <option value="poetry">Poetry</option>
+                                <option value="life-lesson">Life Lesson</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button type="submit" class="new-post-submit-btn">Add New Post</button>
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery-3.3.1.js"></script>
+    <script src="../../ckeditor5-47.5.0/ckeditor5/ckeditor5.umd.js"></script>
+    <script src="../js/create.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CKEditor 5 - Quick start CDN</title>
+    	<link rel="stylesheet" href="../../ckeditor5-47.5.0/ckeditor5/ckeditor5.css">
+    	<script src="../../ckeditor5-47.5.0/ckeditor5/ckeditor5.umd.js"></script>
+	</head>
+	<style>
+		/* .ck .ck-content .ck-editor__editable .ck-rounded-corners .ck-editor__editable_inline .ck-read-only .ck-blurred{
+			contentededitable:"true";
+		} */
+	</style>
+	<body>
+		<div id="editor">
+			<textarea name="editor" class="editor" id="editor">Ha</textarea>
+		</div>
+		<script>
+			// Use object destructuring to access the ClassicEditor class and necessary plugins
+			const { ClassicEditor, Essentials, Paragraph, Bold, Italic } = CKEDITOR;
+
+			ClassicEditor
+			.create( document.querySelector( '#editor' ), {
+				// Add your license key or specify 'GPL'
+				licenseKey: '<YOUR_LICENSE_KEY>',
+				plugins: [ Essentials, Paragraph, Bold, Italic ],
+				toolbar: [ 'bold', 'italic' ]
+			})
+			.then( editor => {
+				// Store the editor instance for later use (e.g., getting data)
+				window.editor = editor;
+				console.log( 'Editor was initialized', editor );
+			})
+			.catch( error => {
+				console.error( error.stack );
+			});
+			contentededitable:"true";
+			
+		</script>
+	</body>
+</html>

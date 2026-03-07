@@ -1,0 +1,88 @@
+.main-content-wrapper{
+    padding:80px 0px 0px;
+    display:flex;
+    justify-content:center;
+}
+.main-content-wrapper .form-container{
+    position:relative;
+    width:400px;
+    overflow:hidden;
+}
+.main-content-wrapper .login-form,
+.main-content-wrapper .register-form{
+    /* border:2px solid white; */
+    /* position */
+    height:400px;
+    width:400px;
+    display:flex;
+    flex-direction:column;
+    padding:20px 20px 10px;
+    /* decoration */
+    background-color:#5C0120;
+    border-radius:5px;
+    gap:10px;
+}
+.main-content-wrapper .login-form{
+    position:absolute;
+    transform:translateX(0px);
+    transition:all 0.3s ease;
+}
+.main-content-wrapper .register-form{
+    transition:all 0.3s ease;
+    transform:translateX(400px);
+    /* TEMP */
+    /* position:relative; */
+}
+.main-content-wrapper.none  .login-form{
+    transform:translateX(-400px);
+}
+.main-content-wrapper.none  .register-form{
+    transform:translateX(0px);
+}
+.main-content-wrapper .register-form{
+    height:600px;
+}
+.main-content-wrapper .login-form h1,
+.main-content-wrapper .register-form h1{
+    color:#DAD3B6;
+}
+.main-content-wrapper .login-form label,
+.main-content-wrapper .register-form label{
+    color:#DAD3B6;
+    font-size:20px;
+}
+.main-content-wrapper .login-form input,
+.main-content-wrapper .register-form input{
+    font-size:20px;
+    padding:10px;
+    background-color:#DAD3B6;
+    border-color:aliceblue;
+    border-radius:5px;
+}
+.main-content-wrapper .login-form #login-submit-btn,
+.main-content-wrapper .register-form #register-submit-btn{
+    font-size:20px;
+    font-weight:bold;
+    padding:5px 10px;
+    margin:10px 0px;
+    width:100px;
+    background-color:#DAD3B6;
+    border-radius:5px;
+    color:#5C0120;
+    border-color:aliceblue;
+}
+.main-content-wrapper .login-form p,
+.main-content-wrapper .register-form p{
+    text-align:center;
+    color:#DAD3B6;
+}
+.main-content-wrapper .login-form p a,
+.main-content-wrapper .register-form p a{
+    color:#DAD3B6;
+    border-bottom:2px solid aliceblue;
+    transition:all 0.3s;
+}
+.main-content-wrapper .login-form p a:hover,
+.main-content-wrapper .register-form p a:hover{
+    padding-bottom:5px;
+}
