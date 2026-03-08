@@ -35,15 +35,15 @@
     <div class="dashboard-wrapper">
         <div class="option-wrapper">
             <ul>
-                <li><a href="#">Post Manage</a></li>
-                <li><a href="#">User Manage</a></li>
-                <li><a href="#">Topic Manage</a></li>
+                <li><a href="./dashboard.html">Post Manage</a></li>
+                <li><a href="./user-dashboard.html">User Manage</a></li>
+                <li><a href="./topic-dashboard.html">Topic Manage</a></li>
             </ul>
         </div>
         <div class="option-screen-wrapper">
             <div class="post-manage">
                 <div class="post-btn-group">
-                    <a href="create.html" class="add-post-btn">Add New Post</a>
+                    <a href="./post-manage.html" class="add-post-btn">Add New Post</a>
                     <a href="./dashboard.html" class="post-manage-btn">Manage Posts</a>
                 </div>
                 <div class="content">
@@ -55,9 +55,7 @@
                         </div>
                         <div>
                             <label>Body</label>
-                            <div id="editor">
-                            <textarea name="editor" row="40" cols="20" id="editor"></textarea>
-                            </div>
+                            <textarea></textarea>
                         </div>
                         <div>
                             <label>Topics</label>
@@ -80,5 +78,10 @@
     <script src="../../ckeditor5-47.5.0/ckeditor5/ckeditor5.umd.js"></script>
     <script src="../js/create.js"></script>
     <script src="../js/script.js"></script>
+    <script>
+        CKEDITOR.disableAutoInline = true;
+
+	    var editor = CKEDITOR.inline( 'editor' );
+    </script>
 </body>
 </html>
