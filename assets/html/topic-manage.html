@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-FireFish-Blog</title>
+    <link rel="icon" href="../image/Tech-FireFish-Blog.png">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../../ckeditor5-47.5.0/ckeditor5/ckeditor5.css">
+</head>
+<body>
+    <!-- Navigation Bar build -->
+    <header>
+        <div class="logo">
+            <a>TECH FIREFISH</a>
+            <div class="helloWorld">Hello World</div>
+        </div>
+        <button onclick="navToggle()" id="menuBtn">Menu</button>
+        <ul class="navigation">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./Undeveloped.html">Arcade</a></li>
+            <li><a href="./Undeveloped.html">About</a></li>
+            <li>
+                <a class="user-dropdown" href="./login-section.html">Username/Login</a>
+                <ul>
+                    <li><a href="./Undeveloped.html">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>  
+    <!-- Options Bar -->
+    <div class="dashboard-wrapper">
+        <div class="option-wrapper">
+            <ul>
+                <li><a href="./dashboard.html">Post Manage</a></li>
+                <li><a href="./user-dashboard.html">User Manage</a></li>
+                <li><a href="./topic-dashboard.html">Topic Manage</a></li>
+            </ul>
+        </div>
+        <div class="option-screen-wrapper">
+            <div class="post-manage">
+                <div class="post-btn-group">
+                    <a href="./topic-manage.html" class="add-post-btn">Add New Topic</a>
+                    <a href="./topic-dashboard.html" class="post-manage-btn">Manage Topics</a>
+                </div>
+                <div class="content">
+                    <h2 class="page-title">Topics Manage</h2>
+                    <form action="create.html" method="post">
+                        <div>
+                            <label>Name</label>
+                            <input type="text" name="title" class="text-input">
+                        </div>
+                        <div>
+                            <button type="submit" class="new-post-submit-btn">Add New User</button>
+                        </div>
+                    </form>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery-3.3.1.js"></script>
+    <script src="../../ckeditor5-47.5.0/ckeditor5/ckeditor5.umd.js"></script>
+    <script src="../js/create.js"></script>
+    <script src="../js/script.js"></script>
+    <script>
+        CKEDITOR.disableAutoInline = true;
+
+	    var editor = CKEDITOR.inline( 'editor' );
+    </script>
+</body>
+</html>

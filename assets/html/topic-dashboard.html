@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech-FireFish-Blog</title>
+    <link rel="icon" href="../image/Tech-FireFish-Blog.png">
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+    <!-- Navigation Bar build -->
+    <header>
+        <!-- <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" type="text/css" href="slick-1.8.1/slick/slick-theme.css"/> -->
+        <div class="logo">
+            <a>TECH FIREFISH</a>
+            <div class="helloWorld">Hello World</div>
+        </div>
+        <button onclick="navToggle()" id="menuBtn">Menu</button>
+        <ul class="navigation">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="./Undeveloped.html">Arcade</a></li>
+            <li><a href="./Undeveloped.html">About</a></li>
+            <li>
+                <a class="user-dropdown" href="./login-section.html">Username/Login</a>
+                <ul>
+                    <li><a href="./Undeveloped.html">Profile</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </li>
+        </ul>
+    </header>  
+    <!-- Options Bar -->
+    <div class="dashboard-wrapper">
+        <div class="option-wrapper">
+            <ul>
+                <li><a href="./dashboard.html">Post Manage</a></li>
+                <li><a href="./user-dashboard.html">User Manage</a></li>
+                <li><a href="./topic-dashboard.html">Topic Manage</a></li>
+            </ul>
+        </div>
+        <div class="option-screen-wrapper">
+                <div class="post-manage">
+                    <div class="post-btn-group">
+                        <a href="./topic-manage.html" class="add-post-btn">Add New Topic</a>
+                        <a href="./topic-dashboard.html" class="post-manage-btn">Manage Topics</a>
+                    </div>
+                    <div class="content">
+                        <h2 class="page-title">Topics Manage</h2>
+                        <table>
+                            <thead>
+                                <th>SN</th>
+                                <th>Topic</th>
+                                <th colspan="3">Action</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Peotry</td>
+                                    <td><a href="#" class="edit">edit</a></td>
+                                    <td><a href="#" class="delete">detele</a></td>
+                                    <td><a href="#" class="publish">publish</a></td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Fiction</td>
+                                    <td><a href="#" class="edit">edit</a></td>
+                                    <td><a href="#" class="delete">detele</a></td>
+                                    <td><a href="#" class="publish">publish</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        
+                    </div>
+                </div>
+        </div>
+    </div>
+
+</body>
+</html>
