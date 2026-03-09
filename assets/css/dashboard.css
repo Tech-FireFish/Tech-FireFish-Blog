@@ -141,7 +141,11 @@
     font-size:30px;
 }
 .option-screen-wrapper .post-manage .content form div label{
+    /* position */
+    display:inline-block;
+    margin:10px 0px;
     /* decoration */
+    color:#5C0120;    
     font-weight:bold;
     font-size:25px;
 }
@@ -152,12 +156,12 @@
     /* decoration */
     font-size:20px;
 }
-.option-screen-wrapper .post-manage .content form div label{
+.option-screen-wrapper .post-manage .content form div textarea{
     /* position */
-    display:inline-block;
-    margin:10px 0px;
+    width:100%;
+    min-height:100px;
+    resize:vertical;
     /* decoration */
-    color:#5C0120;
 }
 .option-screen-wrapper .post-manage .content form div select{
     /* position */
@@ -180,3 +184,4 @@
     background-color:#5C0120;
     color:#DAD3B6;
 }
+
