@@ -114,6 +114,22 @@ header ul {
     background-color:#5C0120;
     box-shadow:1rem 1rem 1rem -0.9rem grey;
 }
+header ul input{
+    /* position */
+    width:100%;
+    height:55px;
+    /* decoration */
+    font-size:17px;
+    border:none;
+    border-radius:2px;
+    background-color:transparent;
+    outline:none;
+    border-bottom:2px solid aliceblue;
+    color:aliceblue;
+}
+header ul input::placeholder{
+    color:aliceblue;
+}
 header ul li{
     /* v.0.0.1 */
     float:left;
@@ -472,4 +488,5 @@ header ul li ul li{
 .footerWrapper,
 .postSlider{
     display:none;
+
 } */
