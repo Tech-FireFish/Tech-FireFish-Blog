@@ -1,48 +1,6 @@
 {
-  "id": "temp-ridge-scene-source",
-  "title": "Temp: Ridge Scene Source",
-  "sceneSource": {
-    "background": {
-      "fallback": "docs/images/background-001.png",
-      "pdf": null,
-      "fit": "stretch"
-    },
-    "walls": {
-      "horizontal": { "fallback": "docs/images/wall-002.png", "pdf": null, "fit": "stretch" },
-      "vertical": { "fallback": "docs/images/wall-001.png", "pdf": null, "fit": "stretch" },
-      "shortVertical": { "fallback": "docs/images/wall-003.png", "pdf": null, "fit": "stretch" }
-    },
-    "doors": {
-      "vertical": {
-        "fallback": "docs/images/door-001.png",
-        "pdf": null,
-        "fit": "stretch",
-        "hinge": "start",
-        "openAngle": -0.72,
-        "flipOpenX": false,
-        "flipOpenY": false
-      },
-      "horizontal": {
-        "fallback": "docs/images/door-002.png",
-        "pdf": null,
-        "fit": "stretch",
-        "hinge": "start",
-        "openAngle": -0.72,
-        "flipOpenX": false,
-        "flipOpenY": false
-      }
-    },
-    "operators": [
-      "docs/images/operator-001.png",
-      "docs/images/operator-002.png"
-    ],
-    "enemies": [
-      "docs/images/enemy-001.png",
-      "docs/images/enemy-002.png",
-      "docs/images/enemy-003.png"
-    ],
-    "objective": "docs/images/vip-001.png"
-  },
+  "id": "ridge-house-entry",
+  "title": "Ridge House Entry",
   "walls": [
     { "x": 0, "y": 0, "w": 960, "h": 20 },
     { "x": 0, "y": 620, "w": 960, "h": 20 },
@@ -120,4 +78,3 @@
   ],
   "objective": { "x": 720, "y": 452, "radius": 16, "secured": false, "harmed": false }
 }
-
